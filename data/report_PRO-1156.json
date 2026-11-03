@@ -1,0 +1,53 @@
+{
+  "customer_id": "PRO-1156",
+  "customer_input": {
+    "customer_id": "PRO-1156",
+    "plan_tier": "pro",
+    "monthly_revenue": 299.0,
+    "login_frequency_per_week": 0.8,
+    "feature_usage_score": 22.0,
+    "support_tickets_last_30_days": 3,
+    "nps_score": -5,
+    "months_subscribed": 2
+  },
+  "engagement_health": {
+    "summary": "The customer's engagement health is declining, with low login frequency and feature adoption, alongside negative customer sentiment. The high support burden in the early months could indicate potential churn if not addressed promptly.",
+    "health_status": "declining",
+    "key_signals": [
+      "Login frequency is low at 0.8 times/week, which is below expectations for a pro plan customer.",
+      "Feature usage score is only 22.0/100, indicating limited adoption of available features.",
+      "Three support tickets in the last 30 days suggest a high support burden for a relatively new customer.",
+      "Net Promoter Score of -5 reflects negative customer sentiment.",
+      "Only 2 months into subscription, the customer is at an early lifecycle stage where engagement is crucial."
+    ]
+  },
+  "churn_risk": {
+    "risk_score": 84.0,
+    "risk_level": "critical",
+    "key_drivers": [
+      "Login frequency: 0.8 times/week",
+      "Feature usage score: 22.0/100",
+      "Support tickets: 3 in last 30 days",
+      "NPS score: -5"
+    ],
+    "explanation": "The customer displays critical churn risk due to very low login frequency (0.8 times/week, 35 points), low feature usage (score of 22.0/100, 22 points), moderate support burden (3 tickets, 12 points), and negative sentiment (NPS of -5, 10 points). Immediate intervention is needed to improve engagement and address dissatisfaction."
+  },
+  "retention_strategy": {
+    "strategy_tier": "Discount Offer",
+    "rationale": "Risk score of 84.0 (critical) on pro plan with feature usage 22.0/100. Key drivers: Login frequency: 0.8 times/week, Feature usage score: 22.0/100, Support tickets: 3 in last 30 days."
+  },
+  "personalised_offer": {
+    "subject_line": "Celebrating Your Journey: Special Offer For Your Growth at [Company Name]",
+    "message_body": "Hi [Customer Name],\n\nI hope this message finds you well. I noticed that you've been with us for just over two months, and I wanted to personally reach out to you. It seems like you might have hit a few bumps in the road recently, which is completely understandable when getting started with a new service. One of our primary goals is to ensure a seamless experience as you integrate [Product Name] into your workflow.\n\nTo address this, I'd love to offer you a 25% discount on your next 3 months. This is our way of celebrating your early commitment to us and your continuous journey towards utilizing [Product Name] for your optimal benefit. Additionally, I would like to extend a complimentary 30-day trial of our advanced reporting feature. This could significantly enhance your usage and offer deeper insights tailored to your needs.\n\nLet\u2019s work together to unlock the true potential of [Product Name]. I\u2019ll be reaching out to resolve your recent support tickets personally and ensure we're addressing any concerns. Shall we set up a time to discuss your specific goals and map out a clear path for success this quarter?\n\nThank you for being part of our [Company Name] family.",
+    "offer_details": "Receive a 25% discount on your next 3 months, along with a 30-day free trial of the advanced reporting feature.",
+    "discount_percentage": 25.0,
+    "call_to_action": "Please let me know a convenient time for us to connect and discuss how we can best support your goals."
+  },
+  "evaluation_result": {
+    "passed": true,
+    "score": 91.0,
+    "feedback": "The offer is personalized with specific customer details and provides a compliant discount, avoiding generic language while maintaining a warm tone. It could further enhance personalization by including additional specific metrics from his usage pattern.",
+    "issues": []
+  },
+  "evaluation_iterations": 1
+}

@@ -1,0 +1,51 @@
+{
+  "customer_id": "FREE-3391",
+  "customer_input": {
+    "customer_id": "FREE-3391",
+    "plan_tier": "free",
+    "monthly_revenue": 0.0,
+    "login_frequency_per_week": 0.3,
+    "feature_usage_score": 8.0,
+    "support_tickets_last_30_days": 0,
+    "nps_score": 5,
+    "months_subscribed": 9
+  },
+  "engagement_health": {
+    "summary": "The engagement health of this free-tier customer is currently declining, with very low feature usage and infrequent logins. Although they have not submitted any support tickets, their neutral NPS score suggests ambivalence towards the product.",
+    "health_status": "declining",
+    "key_signals": [
+      "Login frequency is 0.3 times/week, which is low relative to any active usage expectation.",
+      "Feature usage score is 8.0 out of 100, indicating minimal engagement with the product's offerings.",
+      "NPS score of 5 reflects a neutral stance, showing neither strong satisfaction nor dissatisfaction.",
+      "Customer has been subscribed for 9 months without generating any support activity, potentially indicating low engagement rather than seamless use."
+    ]
+  },
+  "churn_risk": {
+    "risk_score": 80.0,
+    "risk_level": "critical",
+    "key_drivers": [
+      "Recency: 0.3 logins/week",
+      "Feature Usage Score: 8.0/100",
+      "NPS Score: 5"
+    ],
+    "explanation": "The customer exhibits critical churn risk with a recency score of 35 points due to infrequent logins and a feature usage score of 30 points reflecting minimal engagement. Additionally, an NPS score of 5 adds further 10 risk points. Immediate action is required to prevent churn."
+  },
+  "retention_strategy": {
+    "strategy_tier": "Discount Offer",
+    "rationale": "Risk score of 80.0 (critical) on free plan with feature usage 8.0/100. Key drivers: Recency: 0.3 logins/week, Feature Usage Score: 8.0/100, NPS Score: 5."
+  },
+  "personalised_offer": {
+    "subject_line": "Unlock Your Potential: Personalised Offer Just for You",
+    "message_body": "Hi there, \n\nI hope this message finds you well! I noticed that over the past 9 months with us, your engagement with our product has been quite low, and I completely understand that it can be challenging to see the value when the features remain partially unexplored. \n\nYour current usage pattern, with login activity at 0.3 times a week and a feature usage score of just 8 out of 100, suggests there might be more opportunities to enhance your experience and derive greater value from the platform. With just a little more engagement, you could unlock impactful tools designed to streamline your tasks and boost productivity. \n\nTo help you experience this potential first-hand, I\u2019d like to offer you a guided path towards an upgrade with your first month on the Starter plan completely free. This opportunity allows you to explore features that are closely aligned with your needs without any immediate financial commitment. \n\nLooking forward to hearing from you! Let's set up a time to discuss how we can tailor our platform to your specific needs.",
+    "offer_details": "Upgrade to the Starter plan and enjoy the first month free. Experience features more aligned with your needs, plus a guided introduction to maximise benefits.",
+    "discount_percentage": null,
+    "call_to_action": "Please reply to this email or book a call with me to discuss upgrading your plan and starting your first month free."
+  },
+  "evaluation_result": {
+    "passed": true,
+    "score": 85.0,
+    "feedback": "The message is generally well-crafted with a good level of personalization and non-generic language. However, it could be improved by detailing more about the Starter plan benefits that align with the user's low engagement areas.",
+    "issues": []
+  },
+  "evaluation_iterations": 2
+}

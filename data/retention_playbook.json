@@ -1,0 +1,163 @@
+[
+  {
+    "id": "rp_001",
+    "segment": "enterprise_high_risk",
+    "strategy": "Account Review Call",
+    "text": "Enterprise Account Review Call Strategy: For high-value enterprise customers showing critical churn signals, initiate a direct executive outreach call within 48 hours. The call should be led by a Senior Customer Success Manager or Account Executive. Agenda: review business outcomes achieved, identify unmet needs, discuss renewal terms including custom SLA upgrades, dedicated support channel, and potential 15-20% loyalty discount on annual commitment. Success metric: secure a renewal commitment or a roadmap alignment session.",
+    "metadata": {"tier": "enterprise", "risk_level": "critical", "strategy_type": "Account Review Call"}
+  },
+  {
+    "id": "rp_002",
+    "segment": "enterprise_medium_risk",
+    "strategy": "Proactive Engagement",
+    "text": "Enterprise Proactive Engagement: Schedule a quarterly business review (QBR) to showcase ROI metrics and unused feature potential. Provide a dedicated success roadmap document showing how advanced features align with their stated business goals. Offer a complimentary training session for their team on advanced analytics features. Highlight integration capabilities they haven't yet activated.",
+    "metadata": {"tier": "enterprise", "risk_level": "medium", "strategy_type": "Proactive Engagement"}
+  },
+  {
+    "id": "rp_003",
+    "segment": "pro_high_risk_discount",
+    "strategy": "Discount Offer",
+    "text": "Pro Tier Discount Offer Strategy: For Pro customers with high churn risk, offer a time-limited loyalty discount of 20-25% off their next 3 months. Frame the offer around celebrating their tenure with us and unlocking their next phase of growth. Include a feature unlock: grant temporary access to an Enterprise feature (advanced reporting or API access) for 30 days to demonstrate upgrade value. Subject line should reference their specific tenure.",
+    "metadata": {"tier": "pro", "risk_level": "high", "strategy_type": "Discount Offer"}
+  },
+  {
+    "id": "rp_004",
+    "segment": "starter_high_risk_discount",
+    "strategy": "Discount Offer",
+    "text": "Starter Tier Discount Offer: For at-risk Starter customers, offer 25-30% off for 2 months combined with a complimentary migration to a more suitable plan if their usage patterns suggest feature mismatch. Emphasise the specific features that match their business type. Include a free 1-on-1 onboarding call with a product specialist to maximise their current plan value.",
+    "metadata": {"tier": "starter", "risk_level": "high", "strategy_type": "Discount Offer"}
+  },
+  {
+    "id": "rp_005",
+    "segment": "feature_education_low_usage",
+    "strategy": "Feature Education",
+    "text": "Feature Education Program: For customers with low feature usage scores (under 40/100), the retention approach focuses on value realisation. Send a personalised 'Your untapped potential' email highlighting 3 specific features they've never activated that directly map to their use case. Offer a 30-minute live demo with a product specialist. Include video tutorials for their top unused features. Success metric: increase feature usage score by 20 points within 30 days.",
+    "metadata": {"tier": "all", "risk_level": "medium", "strategy_type": "Feature Education"}
+  },
+  {
+    "id": "rp_006",
+    "segment": "new_user_onboarding_churn",
+    "strategy": "Feature Education",
+    "text": "Recently Onboarded Customer Retention: Customers who show churn signals within their first 6 months are typically experiencing onboarding friction, not dissatisfaction with product value. Offer a complimentary extended onboarding session, assign a dedicated CSM for 60 days, and provide a customised getting-started guide tailored to their industry. Waive the setup fee for any integrations they haven't yet activated. Focus messaging on 'unlocking your first major win' with the product.",
+    "metadata": {"tier": "all", "risk_level": "high", "strategy_type": "Feature Education", "lifecycle": "onboarding"}
+  },
+  {
+    "id": "rp_007",
+    "segment": "free_tier_low_engagement",
+    "strategy": "Accept Churn",
+    "text": "Free Tier Low Engagement Strategy: For free-tier customers with low engagement and low conversion potential, the cost-effective approach is a light-touch email summarising value they're missing and a clear upgrade path with a first-month-free incentive. If no response within 14 days, gracefully accept churn. Focus retention resources on higher-value segments. Send one personalised email maximum.",
+    "metadata": {"tier": "free", "risk_level": "low", "strategy_type": "Accept Churn"}
+  },
+  {
+    "id": "rp_008",
+    "segment": "power_user_at_risk",
+    "strategy": "Account Review Call",
+    "text": "Power User At-Risk Retention: High feature-usage customers who show sudden churn signals are often experiencing a specific unresolved issue (support ticket backlog, billing dispute, or competitive evaluation). Prioritise same-day escalation to a Senior CSM. Review their open support tickets and resolve before outreach. In the call, acknowledge the friction directly, offer a service credit for any disruption, and present a tailored success plan for the next quarter.",
+    "metadata": {"tier": "enterprise", "risk_level": "critical", "strategy_type": "Account Review Call", "user_type": "power_user"}
+  },
+  {
+    "id": "rp_009",
+    "segment": "nps_detractor_recovery",
+    "strategy": "Account Review Call",
+    "text": "NPS Detractor Recovery Playbook: Customers with NPS below -10 require immediate personalised outreach acknowledging their negative experience. Do not lead with offers or discounts — lead with listening. Schedule a feedback call, assign a dedicated problem-resolution owner, and set specific resolution timelines. Only introduce retention incentives (15-20% discount or service upgrade) after demonstrating that specific concerns have been addressed. Follow up with written confirmation of commitments made.",
+    "metadata": {"tier": "all", "risk_level": "critical", "strategy_type": "Account Review Call", "trigger": "nps_detractor"}
+  },
+  {
+    "id": "rp_010",
+    "segment": "high_support_burden",
+    "strategy": "Proactive Engagement",
+    "text": "High Support Burden Recovery: Customers with 3+ support tickets in 30 days are experiencing product friction. Proactive outreach should lead with empathy and acknowledgement. Offer a dedicated priority support channel (Slack Connect or dedicated email), schedule a product health check call, and provide a service credit of $50-100 for the inconvenience. If tickets relate to a known bug, share the fix timeline proactively.",
+    "metadata": {"tier": "all", "risk_level": "medium", "strategy_type": "Proactive Engagement", "trigger": "high_support"}
+  },
+  {
+    "id": "rp_011",
+    "segment": "annual_renewal_risk",
+    "strategy": "Discount Offer",
+    "text": "Annual Renewal Retention Offer: For customers approaching annual renewal with declining engagement, offer an early renewal incentive: lock in current pricing (avoiding any upcoming price increases) plus 2 months free on a 12-month prepay. Include a customised success plan for the coming year with specific feature adoption milestones. Frame as 'securing your rate before our Q1 pricing update.'",
+    "metadata": {"tier": "pro", "risk_level": "high", "strategy_type": "Discount Offer", "trigger": "renewal"}
+  },
+  {
+    "id": "rp_012",
+    "segment": "competitive_threat",
+    "strategy": "Discount Offer",
+    "text": "Competitive Threat Response: When customers show signals of evaluating competitors (multiple feature inquiries, export data requests), respond with a competitive comparison sheet highlighting differentiating features they're already using. Offer a 20% discount for a 12-month commitment framed as 'partnership pricing.' Include a roadmap preview of features launching in the next 90 days that address their specific use case gaps.",
+    "metadata": {"tier": "pro", "risk_level": "high", "strategy_type": "Discount Offer", "trigger": "competitive"}
+  },
+  {
+    "id": "rp_013",
+    "segment": "feature_highlight_analytics",
+    "strategy": "Feature Education",
+    "text": "Advanced Analytics Feature Education: Many customers underutilise the advanced analytics dashboard, custom report builder, and data export capabilities. A targeted education email titled 'Your data is telling a story — here's how to read it' with a 3-minute product video showing how similar companies use these features drives 35% feature activation within 2 weeks. Include a pre-built dashboard template for their industry.",
+    "metadata": {"tier": "pro", "risk_level": "medium", "strategy_type": "Feature Education", "feature": "analytics"}
+  },
+  {
+    "id": "rp_014",
+    "segment": "feature_highlight_integrations",
+    "strategy": "Feature Education",
+    "text": "Integration Ecosystem Education: Customers who haven't activated integrations (Slack, Salesforce, HubSpot, Zapier) are missing significant workflow value. A personalised email listing the 3 integrations most relevant to their tech stack (inferred from their industry) with a 1-click setup offer drives 40% integration adoption. Activated integrations reduce churn by 60% on average due to switching costs.",
+    "metadata": {"tier": "all", "risk_level": "medium", "strategy_type": "Feature Education", "feature": "integrations"}
+  },
+  {
+    "id": "rp_015",
+    "segment": "feature_highlight_automation",
+    "strategy": "Feature Education",
+    "text": "Workflow Automation Education: Customers with low feature scores often haven't discovered the automation builder. A personalised message: 'Most of your manual processes could be automated — here's one example for your workflow.' Include a pre-configured automation template relevant to their plan tier. Offer a 30-minute workflow audit call. Customers who activate 3+ automations have 80% lower churn rates.",
+    "metadata": {"tier": "pro", "risk_level": "medium", "strategy_type": "Feature Education", "feature": "automation"}
+  },
+  {
+    "id": "rp_016",
+    "segment": "proactive_check_in",
+    "strategy": "Proactive Engagement",
+    "text": "Proactive Engagement Check-In: A warm, personalised check-in from the customer's named CSM works best when framed around curiosity rather than retention. 'I noticed you've been focusing on [specific feature area] — I wanted to share a few tips that our most successful customers in your space use.' Include 2-3 specific insights based on their usage patterns. Avoid any language that implies you're worried about them leaving.",
+    "metadata": {"tier": "all", "risk_level": "medium", "strategy_type": "Proactive Engagement"}
+  },
+  {
+    "id": "rp_017",
+    "segment": "success_milestone",
+    "strategy": "Proactive Engagement",
+    "text": "Customer Success Milestone Celebration: For customers reaching tenure milestones (3, 6, 12 months), celebrate with a personalised email highlighting what they've achieved with the product. Include: number of times they've used the product, specific features they've mastered, an estimate of time/money saved. Offer a 'loyalty badge' or feature unlock (extended storage, extra seats for 30 days) as a thank-you. This increases NPS by an average of 15 points.",
+    "metadata": {"tier": "all", "risk_level": "low", "strategy_type": "Proactive Engagement", "trigger": "milestone"}
+  },
+  {
+    "id": "rp_018",
+    "segment": "enterprise_expansion",
+    "strategy": "Account Review Call",
+    "text": "Enterprise Expansion and Retention Call: For enterprise customers with healthy usage but no expansion in 12+ months, combine retention and growth in one conversation. Present a 'Business Impact Review' showing quantified ROI from current usage, then introduce a expansion opportunity (additional seats, advanced module) with an introductory 3-month pilot price. Position as a strategic partnership review, not a sales call.",
+    "metadata": {"tier": "enterprise", "risk_level": "medium", "strategy_type": "Account Review Call", "trigger": "expansion"}
+  },
+  {
+    "id": "rp_019",
+    "segment": "seasonal_retention_offer",
+    "strategy": "Discount Offer",
+    "text": "Seasonal Retention Campaign: End-of-quarter retention offers should be framed around value alignment rather than desperation. 'As we close out Q[X], we wanted to make sure your team is set up for success in the next quarter.' Offer a 15% discount on an annual upgrade or a 2-month extension on their current plan. Include a forward-looking success plan with specific goals for the next 90 days.",
+    "metadata": {"tier": "all", "risk_level": "high", "strategy_type": "Discount Offer", "trigger": "seasonal"}
+  },
+  {
+    "id": "rp_020",
+    "segment": "graceful_churn_offboard",
+    "strategy": "Accept Churn",
+    "text": "Graceful Churn Acceptance and Future Re-engagement: When a customer's economics don't justify retention investment, accept the churn gracefully but plant seeds for future return. Send a warm offboarding email: 'We understand your needs may have changed — here's how to export your data and everything you've built.' Offer a 'Come back' code for 20% off if they return within 6 months. Request a brief exit feedback call. Customers who churn positively are 3x more likely to return.",
+    "metadata": {"tier": "all", "risk_level": "low", "strategy_type": "Accept Churn"}
+  },
+  {
+    "id": "rp_021",
+    "segment": "multi_stakeholder_enterprise",
+    "strategy": "Account Review Call",
+    "text": "Multi-Stakeholder Enterprise Retention: Enterprise churn decisions are rarely made by one person. Map the account's key stakeholders (champion, economic buyer, end users) and develop a tailored message for each. Champion: celebrate their internal wins and provide data to present to leadership. Economic buyer: ROI analysis and cost-per-outcome metrics. End users: feature tips and efficiency gains. Coordinate a multi-threaded outreach strategy over 2 weeks before the formal account review call.",
+    "metadata": {"tier": "enterprise", "risk_level": "critical", "strategy_type": "Account Review Call"}
+  },
+  {
+    "id": "rp_022",
+    "segment": "re_engagement_dormant",
+    "strategy": "Proactive Engagement",
+    "text": "Dormant User Re-engagement: For customers who haven't logged in for 2+ weeks, a re-engagement sequence of 2 emails works best. Email 1: 'We miss you — here's what's new since your last visit' (product updates, new features). Email 2 (3 days later, if no login): 'Quick question — is there something blocking your progress?' with a direct reply option. Avoid large discount offers in re-engagement as they signal desperation and devalue the product.",
+    "metadata": {"tier": "all", "risk_level": "medium", "strategy_type": "Proactive Engagement", "trigger": "dormant"}
+  },
+  {
+    "id": "rp_023",
+    "segment": "price_sensitivity_objection",
+    "strategy": "Discount Offer",
+    "text": "Price Sensitivity Objection Handling: When customers cite price as the primary churn reason, do not immediately offer discounts. First, reframe value: 'Let's look at what you're getting per dollar.' Present a cost-per-outcome metric (cost per automated task, cost per user, cost vs. manual equivalent). If value reframe doesn't resolve, offer a downgrade to a more affordable plan rather than a discount on current plan — this preserves revenue per seat while reducing churn. Reserve direct discounts (15-20%) for customers who are genuinely at risk of cancellation after value conversation.",
+    "metadata": {"tier": "all", "risk_level": "high", "strategy_type": "Discount Offer", "trigger": "price_objection"}
+  }
+]

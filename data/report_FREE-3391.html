@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Retention Report — FREE-3391</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                max-width: 900px; margin: 0 auto; padding: 20px; background: #f8f9fa; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2c3e50; margin-top: 0; }
+        h3 { color: #555; }
+        .card { background: white; border-radius: 8px; padding: 20px; margin: 20px 0;
+                 box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                          gap: 15px; margin: 15px 0; }
+        .metric { background: #f8f9fa; border-radius: 6px; padding: 12px; text-align: center; }
+        .metric-value { font-size: 24px; font-weight: bold; }
+        .metric-label { font-size: 12px; color: #666; margin-top: 4px; }
+        .badge { display: inline-block; padding: 4px 12px; border-radius: 20px;
+                  color: white; font-weight: bold; font-size: 14px; }
+        .risk-score { font-size: 48px; font-weight: bold; color: #dc3545; }
+        .offer-box { background: #f0f7ff; border-left: 4px solid #3498db;
+                      padding: 15px; margin-top: 15px; border-radius: 4px; }
+        .message-body { line-height: 1.7; }
+        .eval-badge { background: #28a745; }
+        .health-badge { background: #fd7e14; }
+        ul { margin: 8px 0; padding-left: 20px; }
+        li { margin: 4px 0; }
+        hr { border: none; border-top: 1px solid #eee; margin: 15px 0; }
+        .footer { text-align: center; color: #999; font-size: 12px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <h1>Customer Churn Retention Report</h1>
+    <p><strong>Customer ID:</strong> FREE-3391 &nbsp;|&nbsp;
+       <strong>Plan:</strong> FREE &nbsp;|&nbsp;
+       <strong>MRR:</strong> $0.00 &nbsp;|&nbsp;
+       <strong>Tenure:</strong> 9 months &nbsp;|&nbsp;
+       <strong>Evaluation Iterations:</strong> 2</p>
+
+    <div class="card">
+        <h2>Customer Metrics</h2>
+        <div class="metrics-grid">
+            <div class="metric">
+                <div class="metric-value">0.3</div>
+                <div class="metric-label">Logins/Week</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">8.0</div>
+                <div class="metric-label">Feature Usage Score</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">0</div>
+                <div class="metric-label">Support Tickets (30d)</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">5</div>
+                <div class="metric-label">NPS Score</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Engagement Health &nbsp;
+            <span class="badge health-badge">DECLINING</span>
+        </h2>
+        <p>The engagement health of this free-tier customer is currently declining, with very low feature usage and infrequent logins. Although they have not submitted any support tickets, their neutral NPS score suggests ambivalence towards the product.</p>
+        <h3>Key Signals</h3>
+        <ul><li>Login frequency is 0.3 times/week, which is low relative to any active usage expectation.</li><li>Feature usage score is 8.0 out of 100, indicating minimal engagement with the product's offerings.</li><li>NPS score of 5 reflects a neutral stance, showing neither strong satisfaction nor dissatisfaction.</li><li>Customer has been subscribed for 9 months without generating any support activity, potentially indicating low engagement rather than seamless use.</li></ul>
+    </div>
+
+    <div class="card">
+        <h2>Churn Risk Assessment</h2>
+        <div class="risk-score">80/100</div>
+        <p><strong>Risk Level:</strong> CRITICAL</p>
+        <p>The customer exhibits critical churn risk with a recency score of 35 points due to infrequent logins and a feature usage score of 30 points reflecting minimal engagement. Additionally, an NPS score of 5 adds further 10 risk points. Immediate action is required to prevent churn.</p>
+        <h3>Key Risk Drivers</h3>
+        <ul><li>Recency: 0.3 logins/week</li><li>Feature Usage Score: 8.0/100</li><li>NPS Score: 5</li></ul>
+    </div>
+
+    <div class="card">
+        <h2>Retention Strategy</h2>
+        <p><strong>Selected Tier:</strong>
+           <span class="badge" style="background:#3498db;">Discount Offer</span>
+        </p>
+        <p>Risk score of 80.0 (critical) on free plan with feature usage 8.0/100. Key drivers: Recency: 0.3 logins/week, Feature Usage Score: 8.0/100, NPS Score: 5.</p>
+    </div>
+
+    
+        <div class="card">
+            <h2>Personalised Retention Offer</h2>
+            <p><strong>Subject:</strong> Unlock Your Potential: Personalised Offer Just for You</p>
+            <hr/>
+            <div class="message-body"><p>Hi there, </p><p>I hope this message finds you well! I noticed that over the past 9 months with us, your engagement with our product has been quite low, and I completely understand that it can be challenging to see the value when the features remain partially unexplored. </p><p>Your current usage pattern, with login activity at 0.3 times a week and a feature usage score of just 8 out of 100, suggests there might be more opportunities to enhance your experience and derive greater value from the platform. With just a little more engagement, you could unlock impactful tools designed to streamline your tasks and boost productivity. </p><p>To help you experience this potential first-hand, I’d like to offer you a guided path towards an upgrade with your first month on the Starter plan completely free. This opportunity allows you to explore features that are closely aligned with your needs without any immediate financial commitment. </p><p>Looking forward to hearing from you! Let's set up a time to discuss how we can tailor our platform to your specific needs.</p></div>
+            <div class="offer-box">
+                <h3>Offer Details</h3>
+                <p>Upgrade to the Starter plan and enjoy the first month free. Experience features more aligned with your needs, plus a guided introduction to maximise benefits.</p>
+                
+                <p><strong>Call to Action:</strong> Please reply to this email or book a call with me to discuss upgrading your plan and starting your first month free.</p>
+            </div>
+        </div>
+        
+
+    <div class="card">
+        <h2>Quality Evaluation &nbsp;
+            <span class="badge eval-badge">PASSED</span>
+        </h2>
+        <p><strong>Score:</strong> 85/100</p>
+        <p>The message is generally well-crafted with a good level of personalization and non-generic language. However, it could be improved by detailing more about the Starter plan benefits that align with the user's low engagement areas.</p>
+        
+    </div>
+
+    <div class="footer">
+        <p>Generated by Multi-Agent Customer Churn Retention System</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Retention Report — ENT-7842</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                max-width: 900px; margin: 0 auto; padding: 20px; background: #f8f9fa; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2c3e50; margin-top: 0; }
+        h3 { color: #555; }
+        .card { background: white; border-radius: 8px; padding: 20px; margin: 20px 0;
+                 box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                          gap: 15px; margin: 15px 0; }
+        .metric { background: #f8f9fa; border-radius: 6px; padding: 12px; text-align: center; }
+        .metric-value { font-size: 24px; font-weight: bold; }
+        .metric-label { font-size: 12px; color: #666; margin-top: 4px; }
+        .badge { display: inline-block; padding: 4px 12px; border-radius: 20px;
+                  color: white; font-weight: bold; font-size: 14px; }
+        .risk-score { font-size: 48px; font-weight: bold; color: #dc3545; }
+        .offer-box { background: #f0f7ff; border-left: 4px solid #3498db;
+                      padding: 15px; margin-top: 15px; border-radius: 4px; }
+        .message-body { line-height: 1.7; }
+        .eval-badge { background: #28a745; }
+        .health-badge { background: #fd7e14; }
+        ul { margin: 8px 0; padding-left: 20px; }
+        li { margin: 4px 0; }
+        hr { border: none; border-top: 1px solid #eee; margin: 15px 0; }
+        .footer { text-align: center; color: #999; font-size: 12px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <h1>Customer Churn Retention Report</h1>
+    <p><strong>Customer ID:</strong> ENT-7842 &nbsp;|&nbsp;
+       <strong>Plan:</strong> ENTERPRISE &nbsp;|&nbsp;
+       <strong>MRR:</strong> $4500.00 &nbsp;|&nbsp;
+       <strong>Tenure:</strong> 18 months &nbsp;|&nbsp;
+       <strong>Evaluation Iterations:</strong> 1</p>
+
+    <div class="card">
+        <h2>Customer Metrics</h2>
+        <div class="metrics-grid">
+            <div class="metric">
+                <div class="metric-value">1.5</div>
+                <div class="metric-label">Logins/Week</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">72.0</div>
+                <div class="metric-label">Feature Usage Score</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">7</div>
+                <div class="metric-label">Support Tickets (30d)</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">-15</div>
+                <div class="metric-label">NPS Score</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Engagement Health &nbsp;
+            <span class="badge health-badge">DECLINING</span>
+        </h2>
+        <p>The engagement health for customer ENT-7842 is declining. Despite moderate feature adoption with a score of 72, the low login frequency of 1.5 times per week and the negative NPS score of -15 indicate potential disengagement. Additionally, the high number of support tickets (7 in the last 30 days) suggests increasing dissatisfaction or challenges with the platform.</p>
+        <h3>Key Signals</h3>
+        <ul><li>Login frequency of 1.5 times per week is below expectations for the enterprise plan.</li><li>Feature usage score is moderate at 72/100.</li><li>High number of support tickets (7) in the last 30 days.</li><li>NPS score is negative at -15, showing customer dissatisfaction.</li><li>Customer tenure is 18 months, indicating they are in the growth or potential renewal phase.</li></ul>
+    </div>
+
+    <div class="card">
+        <h2>Churn Risk Assessment</h2>
+        <div class="risk-score">87/100</div>
+        <p><strong>Risk Level:</strong> CRITICAL</p>
+        <p>The customer has a critical churn risk with a score of 87 due to infrequent logins (1.5 times/week), high support needs (7 tickets), and a negative NPS score (-15). Despite a moderate feature usage score of 72, the combination of these factors suggests significant disengagement and dissatisfaction requiring immediate intervention.</p>
+        <h3>Key Risk Drivers</h3>
+        <ul><li>Login frequency of 1.5 times/week worth 25 risk points</li><li>Feature Usage Score of 72/100 worth 5 risk points</li><li>7 support tickets in last 30 days worth 20 risk points</li><li>NPS score of -15 worth 15 risk points</li></ul>
+    </div>
+
+    <div class="card">
+        <h2>Retention Strategy</h2>
+        <p><strong>Selected Tier:</strong>
+           <span class="badge" style="background:#3498db;">Account Review Call</span>
+        </p>
+        <p>Risk score of 87.0 (critical) on enterprise plan with feature usage 72.0/100. Key drivers: Login frequency of 1.5 times/week worth 25 risk points, Feature Usage Score of 72/100 worth 5 risk points, 7 support tickets in last 30 days worth 20 risk points.</p>
+    </div>
+
+    
+        <div class="card">
+            <h2>Personalised Retention Offer</h2>
+            <p><strong>Subject:</strong> Urgent: Let's Align on Your Goals & Enhance Your Experience with Us</p>
+            <hr/>
+            <div class="message-body"><p>Hi [Customer Contact Name],</p><p>I hope this message finds you well. I'm reaching out because I've noticed some concerning trends regarding your recent engagement with our platform, and I’d like to ensure we proactively address any challenges you’ve been facing.</p><p>Firstly, I want to apologize for any difficulties you've encountered, especially with the recent support ticket backlog. Thank you for bringing these to our attention. Your satisfaction is our top priority, and I am personally committed to resolving these issues quickly. </p><p>Given your critical role in shaping how we can better serve your team's needs, I would love to arrange a call with our Senior Success Manager. During this session, we can delve into the business outcomes you've achieved, address unmet needs, and discuss tailored enhancements—such as SLA upgrades or a dedicated support channel—that could make a significant impact. Additionally, we are prepared to offer a 20% loyalty discount on your renewal with a custom annual commitment to reward your continued partnership.</p></div>
+            <div class="offer-box">
+                <h3>Offer Details</h3>
+                <p>20% loyalty discount on annual renewal, along with a custom SLA upgrade and a dedicated support channel.</p>
+                <p><strong>Discount Offered:</strong> 20.0%</p>
+                <p><strong>Call to Action:</strong> Please let me know your availability this week for a direct call with our Senior Success Manager to explore these opportunities and secure your tailored renewal terms.</p>
+            </div>
+        </div>
+        
+
+    <div class="card">
+        <h2>Quality Evaluation &nbsp;
+            <span class="badge eval-badge">PASSED</span>
+        </h2>
+        <p><strong>Score:</strong> 90/100</p>
+        <p>Overall, the retention offer was well-executed with clear personalisation, a compliant discount, and mostly non-generic language. However, minor improvements could be made in making the language more human and avoiding potential clichés.</p>
+        <ul><li>The phrase 'your satisfaction is our top priority' is somewhat generic and could be more personalised to the customer's specific experiences.</li><li>Including [Customer Contact Name] without substitution seems like a placeholder error; this should be customized with the specific contact's name.</li></ul>
+    </div>
+
+    <div class="footer">
+        <p>Generated by Multi-Agent Customer Churn Retention System</p>
+    </div>
+</body>
+</html>

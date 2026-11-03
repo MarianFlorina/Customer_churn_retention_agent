@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Retention Report — PRO-1156</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                max-width: 900px; margin: 0 auto; padding: 20px; background: #f8f9fa; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2c3e50; margin-top: 0; }
+        h3 { color: #555; }
+        .card { background: white; border-radius: 8px; padding: 20px; margin: 20px 0;
+                 box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                          gap: 15px; margin: 15px 0; }
+        .metric { background: #f8f9fa; border-radius: 6px; padding: 12px; text-align: center; }
+        .metric-value { font-size: 24px; font-weight: bold; }
+        .metric-label { font-size: 12px; color: #666; margin-top: 4px; }
+        .badge { display: inline-block; padding: 4px 12px; border-radius: 20px;
+                  color: white; font-weight: bold; font-size: 14px; }
+        .risk-score { font-size: 48px; font-weight: bold; color: #dc3545; }
+        .offer-box { background: #f0f7ff; border-left: 4px solid #3498db;
+                      padding: 15px; margin-top: 15px; border-radius: 4px; }
+        .message-body { line-height: 1.7; }
+        .eval-badge { background: #28a745; }
+        .health-badge { background: #fd7e14; }
+        ul { margin: 8px 0; padding-left: 20px; }
+        li { margin: 4px 0; }
+        hr { border: none; border-top: 1px solid #eee; margin: 15px 0; }
+        .footer { text-align: center; color: #999; font-size: 12px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <h1>Customer Churn Retention Report</h1>
+    <p><strong>Customer ID:</strong> PRO-1156 &nbsp;|&nbsp;
+       <strong>Plan:</strong> PRO &nbsp;|&nbsp;
+       <strong>MRR:</strong> $299.00 &nbsp;|&nbsp;
+       <strong>Tenure:</strong> 2 months &nbsp;|&nbsp;
+       <strong>Evaluation Iterations:</strong> 1</p>
+
+    <div class="card">
+        <h2>Customer Metrics</h2>
+        <div class="metrics-grid">
+            <div class="metric">
+                <div class="metric-value">0.8</div>
+                <div class="metric-label">Logins/Week</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">22.0</div>
+                <div class="metric-label">Feature Usage Score</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Support Tickets (30d)</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">-5</div>
+                <div class="metric-label">NPS Score</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Engagement Health &nbsp;
+            <span class="badge health-badge">DECLINING</span>
+        </h2>
+        <p>The customer's engagement health is declining, with low login frequency and feature adoption, alongside negative customer sentiment. The high support burden in the early months could indicate potential churn if not addressed promptly.</p>
+        <h3>Key Signals</h3>
+        <ul><li>Login frequency is low at 0.8 times/week, which is below expectations for a pro plan customer.</li><li>Feature usage score is only 22.0/100, indicating limited adoption of available features.</li><li>Three support tickets in the last 30 days suggest a high support burden for a relatively new customer.</li><li>Net Promoter Score of -5 reflects negative customer sentiment.</li><li>Only 2 months into subscription, the customer is at an early lifecycle stage where engagement is crucial.</li></ul>
+    </div>
+
+    <div class="card">
+        <h2>Churn Risk Assessment</h2>
+        <div class="risk-score">84/100</div>
+        <p><strong>Risk Level:</strong> CRITICAL</p>
+        <p>The customer displays critical churn risk due to very low login frequency (0.8 times/week, 35 points), low feature usage (score of 22.0/100, 22 points), moderate support burden (3 tickets, 12 points), and negative sentiment (NPS of -5, 10 points). Immediate intervention is needed to improve engagement and address dissatisfaction.</p>
+        <h3>Key Risk Drivers</h3>
+        <ul><li>Login frequency: 0.8 times/week</li><li>Feature usage score: 22.0/100</li><li>Support tickets: 3 in last 30 days</li><li>NPS score: -5</li></ul>
+    </div>
+
+    <div class="card">
+        <h2>Retention Strategy</h2>
+        <p><strong>Selected Tier:</strong>
+           <span class="badge" style="background:#3498db;">Discount Offer</span>
+        </p>
+        <p>Risk score of 84.0 (critical) on pro plan with feature usage 22.0/100. Key drivers: Login frequency: 0.8 times/week, Feature usage score: 22.0/100, Support tickets: 3 in last 30 days.</p>
+    </div>
+
+    
+        <div class="card">
+            <h2>Personalised Retention Offer</h2>
+            <p><strong>Subject:</strong> Celebrating Your Journey: Special Offer For Your Growth at [Company Name]</p>
+            <hr/>
+            <div class="message-body"><p>Hi [Customer Name],</p><p>I hope this message finds you well. I noticed that you've been with us for just over two months, and I wanted to personally reach out to you. It seems like you might have hit a few bumps in the road recently, which is completely understandable when getting started with a new service. One of our primary goals is to ensure a seamless experience as you integrate [Product Name] into your workflow.</p><p>To address this, I'd love to offer you a 25% discount on your next 3 months. This is our way of celebrating your early commitment to us and your continuous journey towards utilizing [Product Name] for your optimal benefit. Additionally, I would like to extend a complimentary 30-day trial of our advanced reporting feature. This could significantly enhance your usage and offer deeper insights tailored to your needs.</p><p>Let’s work together to unlock the true potential of [Product Name]. I’ll be reaching out to resolve your recent support tickets personally and ensure we're addressing any concerns. Shall we set up a time to discuss your specific goals and map out a clear path for success this quarter?</p><p>Thank you for being part of our [Company Name] family.</p></div>
+            <div class="offer-box">
+                <h3>Offer Details</h3>
+                <p>Receive a 25% discount on your next 3 months, along with a 30-day free trial of the advanced reporting feature.</p>
+                <p><strong>Discount Offered:</strong> 25.0%</p>
+                <p><strong>Call to Action:</strong> Please let me know a convenient time for us to connect and discuss how we can best support your goals.</p>
+            </div>
+        </div>
+        
+
+    <div class="card">
+        <h2>Quality Evaluation &nbsp;
+            <span class="badge eval-badge">PASSED</span>
+        </h2>
+        <p><strong>Score:</strong> 91/100</p>
+        <p>The offer is personalized with specific customer details and provides a compliant discount, avoiding generic language while maintaining a warm tone. It could further enhance personalization by including additional specific metrics from his usage pattern.</p>
+        
+    </div>
+
+    <div class="footer">
+        <p>Generated by Multi-Agent Customer Churn Retention System</p>
+    </div>
+</body>
+</html>

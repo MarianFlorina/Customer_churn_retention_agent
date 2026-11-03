@@ -1,0 +1,35 @@
+[
+  {
+    "customer_id": "ENT-7842",
+    "plan_tier": "enterprise",
+    "monthly_revenue": 4500.00,
+    "login_frequency_per_week": 1.5,
+    "feature_usage_score": 72,
+    "support_tickets_last_30_days": 7,
+    "nps_score": -15,
+    "months_subscribed": 18,
+    "_description": "High-value enterprise power user (historically) who has dramatically reduced engagement. High support burden and negative NPS suggest a serious unresolved issue. Critical churn risk despite long tenure and high revenue."
+  },
+  {
+    "customer_id": "FREE-3391",
+    "plan_tier": "free",
+    "monthly_revenue": 0.00,
+    "login_frequency_per_week": 0.3,
+    "feature_usage_score": 8,
+    "support_tickets_last_30_days": 0,
+    "nps_score": 5,
+    "months_subscribed": 9,
+    "_description": "Low-engagement free-tier user who has been on the platform 9 months without converting. Barely using the product, no support contact, passive NPS. Classic ghost account — low retention investment warranted."
+  },
+  {
+    "customer_id": "PRO-1156",
+    "plan_tier": "pro",
+    "monthly_revenue": 299.00,
+    "login_frequency_per_week": 0.8,
+    "feature_usage_score": 22,
+    "support_tickets_last_30_days": 3,
+    "nps_score": -5,
+    "months_subscribed": 2,
+    "_description": "Recently onboarded Pro customer showing early churn signals. Low login frequency and very low feature usage after 2 months suggests onboarding friction. Some support tickets and slightly negative NPS confirm frustration. Classic early-lifecycle churn risk requiring education-first intervention."
+  }
+]

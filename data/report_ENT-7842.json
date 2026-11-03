@@ -1,0 +1,56 @@
+{
+  "customer_id": "ENT-7842",
+  "customer_input": {
+    "customer_id": "ENT-7842",
+    "plan_tier": "enterprise",
+    "monthly_revenue": 4500.0,
+    "login_frequency_per_week": 1.5,
+    "feature_usage_score": 72.0,
+    "support_tickets_last_30_days": 7,
+    "nps_score": -15,
+    "months_subscribed": 18
+  },
+  "engagement_health": {
+    "summary": "The engagement health for customer ENT-7842 is declining. Despite moderate feature adoption with a score of 72, the low login frequency of 1.5 times per week and the negative NPS score of -15 indicate potential disengagement. Additionally, the high number of support tickets (7 in the last 30 days) suggests increasing dissatisfaction or challenges with the platform.",
+    "health_status": "declining",
+    "key_signals": [
+      "Login frequency of 1.5 times per week is below expectations for the enterprise plan.",
+      "Feature usage score is moderate at 72/100.",
+      "High number of support tickets (7) in the last 30 days.",
+      "NPS score is negative at -15, showing customer dissatisfaction.",
+      "Customer tenure is 18 months, indicating they are in the growth or potential renewal phase."
+    ]
+  },
+  "churn_risk": {
+    "risk_score": 87.0,
+    "risk_level": "critical",
+    "key_drivers": [
+      "Login frequency of 1.5 times/week worth 25 risk points",
+      "Feature Usage Score of 72/100 worth 5 risk points",
+      "7 support tickets in last 30 days worth 20 risk points",
+      "NPS score of -15 worth 15 risk points"
+    ],
+    "explanation": "The customer has a critical churn risk with a score of 87 due to infrequent logins (1.5 times/week), high support needs (7 tickets), and a negative NPS score (-15). Despite a moderate feature usage score of 72, the combination of these factors suggests significant disengagement and dissatisfaction requiring immediate intervention."
+  },
+  "retention_strategy": {
+    "strategy_tier": "Account Review Call",
+    "rationale": "Risk score of 87.0 (critical) on enterprise plan with feature usage 72.0/100. Key drivers: Login frequency of 1.5 times/week worth 25 risk points, Feature Usage Score of 72/100 worth 5 risk points, 7 support tickets in last 30 days worth 20 risk points."
+  },
+  "personalised_offer": {
+    "subject_line": "Urgent: Let's Align on Your Goals & Enhance Your Experience with Us",
+    "message_body": "Hi [Customer Contact Name],\n\nI hope this message finds you well. I'm reaching out because I've noticed some concerning trends regarding your recent engagement with our platform, and I\u2019d like to ensure we proactively address any challenges you\u2019ve been facing.\n\nFirstly, I want to apologize for any difficulties you've encountered, especially with the recent support ticket backlog. Thank you for bringing these to our attention. Your satisfaction is our top priority, and I am personally committed to resolving these issues quickly. \n\nGiven your critical role in shaping how we can better serve your team's needs, I would love to arrange a call with our Senior Success Manager. During this session, we can delve into the business outcomes you've achieved, address unmet needs, and discuss tailored enhancements\u2014such as SLA upgrades or a dedicated support channel\u2014that could make a significant impact. Additionally, we are prepared to offer a 20% loyalty discount on your renewal with a custom annual commitment to reward your continued partnership.",
+    "offer_details": "20% loyalty discount on annual renewal, along with a custom SLA upgrade and a dedicated support channel.",
+    "discount_percentage": 20.0,
+    "call_to_action": "Please let me know your availability this week for a direct call with our Senior Success Manager to explore these opportunities and secure your tailored renewal terms."
+  },
+  "evaluation_result": {
+    "passed": true,
+    "score": 90.0,
+    "feedback": "Overall, the retention offer was well-executed with clear personalisation, a compliant discount, and mostly non-generic language. However, minor improvements could be made in making the language more human and avoiding potential clich\u00e9s.",
+    "issues": [
+      "The phrase 'your satisfaction is our top priority' is somewhat generic and could be more personalised to the customer's specific experiences.",
+      "Including [Customer Contact Name] without substitution seems like a placeholder error; this should be customized with the specific contact's name."
+    ]
+  },
+  "evaluation_iterations": 1
+}
